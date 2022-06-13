@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="with=device-width,initial-scale=1.0">
+    <title>Vnit NAGPUR</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins:wght@700&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section class="sub-header">
+       <nav>
+         <a href="index.html"><img class="rudra" src="logo_dav.jpeg" width="20" height="80"></a>
+         <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu()"></i>
+           <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="about.html">ABOUT</a></li>
+             <li><a href="facilites.html">FACILITIES</a></li>
+             <li><a href="faculty list.html">FACULTY LISIT</a></li>
+             <li><a href="blog.html">BLOG</a></li>
+             <li><a href="gallery.html">GALLERY</a></li>
+             <li><a href="contact.html">CONTACT US</a></li>
+           </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+       </nav>
+       <h1>Contact Us</h1>
+    </section>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28014.931108432393!2d77.41520695!3d28.6337663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1655106391012!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+      <div class="contact-col">
+        <div >
+          <i class="fa fa-home"></i>
+          <span>
+            <h5>cinnma hall road,belsand more</h5>
+            <p>Runnisadpur,Sitamarhi</p>
+          </span>
+        </div>
+        <div >
+          <i class="fa fa-phone"></i>
+          <span>
+            <h5>9905402619</h5>
+            <p>EXCEPT SUNDAY,9 A.M TO 5 P.M</p>
+          </span>
+        </div>
+        <div >
+          <i class="fa fa-envelope-o"></i>
+          <span>
+            <h5>rudrasanyal843328@gmail.com</h5>
+            <p>Email us for query</p>
+          </span>
+        </div>
+      </div>
+      <div class="contact-col">
+        <form action="form-handler.php" method="post">
+          <input type="text" name="name" placeholder="Enter your name">
+          <input type="email" name="email" placeholder="Enter  email Adderes">
+          <input type="text" name="subject" placeholder="Enter your subject">
+          <textarea rows="8" cols="80" name="message" placeholder="Message" required></textarea>
+          <button type="submit" class="hero-btn red-btn">Send Message</button>
+        </form>
+      </div>
+    </div>
+</section>
+<section class="footer">
+  <h2>ABOUT US</h2>
+  <p>The school was founded in 1992 at Runnisaidpur in Sitamarhi by the efforts of Mahatma N D Grover, who nurtured the sapling of the school to a full fledged and well spread plant of education .It is the first CBSE affiliated DAV public school of the district teaching students mostly coming from remote villages. It holds the record of achieving 100 percent results in the AISSE since its establishment.English is the primary language of instruction, with students also receiving compulsory education in Hindi and Sanskrit.During last 26 years  the school has progressed much and has brought great changes in the standard of teaching learning process.The school has been growing its  strength and has been providing opportunities for multifaceted growth of students through interactive curriculum</p>
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+  <p>Made with <i class="fa fa-heart"></i>by Rudra Sanyal</p>
+</section>
+
+    <script>
+      var navLinks =document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right="0";
+      }
+      function hideMenu(){
+        navLinks.style.right="-200px";
+      }
+    </script>
+  </body>
+</html>
